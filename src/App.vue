@@ -1,26 +1,34 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <MainBoard />
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import MainBoard from './components/MainBoard.vue'
 
 export default {
   name: 'App',
   components: {
-    HelloWorld
+    MainBoard
   }
 }
 </script>
 
 <style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Ubuntu", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+}
+a {
+  color: inherit;
+  text-decoration: none;
+}
+img {
+  vertical-align: bottom;
 }
 </style>
